@@ -1,6 +1,6 @@
 {
     "name": "perfectwebteam/craft-graphql-security",
-    "description": "Allow to query the sectionName of an Entry from the GraphQL API",
+    "description": "An assortment of security measures when using Craft CMS with GraphQL",
     "type": "craft-plugin",
     "keywords": [
         "craft",
