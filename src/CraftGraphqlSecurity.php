@@ -72,13 +72,16 @@ class CraftGraphqlSecurity extends Plugin
     {
         return [
             NodeKind::OPERATION_DEFINITION => static function (OperationDefinitionNode $node) use ($context) {
-                $req = new Request();
-                if ($node->operation === 'mutation' && $req->isGet) {
-                    $context->reportError(new Error(
-                        'operation not permitted'
-                    ));
+                if ($node->operation === 'mutation') {
+                    $req = new Request();
+
+                    if ($req->isGet || count($node->selectionSet->selections) > 1) {
+                        $context->reportError(new Error(
+                            'operation not permitted'
+                        ));
+                    }
                 }
-            },
+            }
         ];
     }
 }
