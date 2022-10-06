@@ -7,7 +7,7 @@
         "cms",
         "craftcms",
         "craft-plugin",
-        "craft graphql",
+        "craft graphql"
     ],
     "support": {
         "docs": "https://github.com/perfectwebteam/craft-graphql-security/blob/master/README.md",
