@@ -1,0 +1,41 @@
+{
+    "name": "perfectwebteam/craft-graphql-security",
+    "description": "Allow to query the sectionName of an Entry from the GraphQL API",
+    "type": "craft-plugin",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "craft graphql",
+    ],
+    "support": {
+        "docs": "https://github.com/perfectwebteam/craft-graphql-security/blob/master/README.md",
+        "source": "https://github.com/perfectwebteam/craft-graphql-security",
+        "issues": "https://github.com/perfectwebteam/craft-graphql-security/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Perfect Web Team",
+            "homepage": "https://perfectwebteam.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^4.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "perfectwebteam\\craftgraphqlsecurity\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "GraphQL Security",
+        "handle": "graphql-security",
+        "developer": "Perfect Web Team",
+        "developerUrl": "https://perfectwebteam.com",
+        "documentationUrl": "https://github.com/perfectwebteam/craft-graphql-security/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/perfectwebteam/craft-graphql-security/master/CHANGELOG.md",
+        "class": "perfectwebteam\\craftgraphqlsecurity\\CraftGraphqlSecurity"
+    }
+}
